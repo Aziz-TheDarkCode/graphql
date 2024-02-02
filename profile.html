@@ -104,6 +104,7 @@
       document.querySelector(".logout").addEventListener("click", () => {
         localStorage.clear("token");
         window.location.href = "index.html";
+        window.location.reload();
       });
     </script>
   </body>

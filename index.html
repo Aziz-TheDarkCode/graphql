@@ -185,7 +185,10 @@
               return;
             }
             window.location.href = "profile.html";
+            window.location.reload();
+
             localStorage.setItem("token", data);
+
             // Handle successful login, redirect, or update UI accordingly
           } catch (error) {
             console.error("Error:", error);

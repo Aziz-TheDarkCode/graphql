@@ -125,6 +125,10 @@
     </div>
 
     <script>
+      token = localStorage.getItem("token");
+      if (token) {
+        window.location.href = "profile.html";
+      }
       function encodeBase64(str) {
         // Utiliser TextEncoder pour obtenir un tableau d'octets
         var encoder = new TextEncoder();
